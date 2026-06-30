@@ -9,13 +9,13 @@ A static website developed to learn the fundamentals of web development, includi
 Responsive layout, 
 Clean UI design, 
 Basic animations using JavaScript, 
-Structured pages using HTML and CSS
+Structured pages using HTML and CSS.
 
 🛠️ Technologies
 
 HTML, 
 CSS, 
-JavaScript
+JavaScript.
 
 🎯 Goal
 
