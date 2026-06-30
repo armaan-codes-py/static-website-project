@@ -6,18 +6,15 @@ A static website developed to learn the fundamentals of web development, includi
 
 ⚙️ Features
 
-Responsive layout
-
-Clean UI design
-
-Basic animations using JavaScript
-
+Responsive layout, 
+Clean UI design, 
+Basic animations using JavaScript, 
 Structured pages using HTML and CSS
 
 🛠️ Technologies
 
-HTML
-CSS
+HTML, 
+CSS, 
 JavaScript
 
 🎯 Goal
