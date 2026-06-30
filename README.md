@@ -1,4 +1,5 @@
 🌐 Static Website Project
+
 📌 Description
 
 A static website developed to learn the fundamentals of web development, including structure, layout, and design principles.
