@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMAGES/JPG/sign-up-image.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+.sign-up-form {
+	border-radius: 20px;
+	width: 300px;
+    max-width: 400px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	background: #fff;
+	padding: 20px;
+	margin: 10% auto 0;
+	text-align: center;
+}
+
+.sign-up-form h1 {
+	color: #C89B3C;
+	margin-bottom: 30px;
+}
+
+.input-box {
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px -10px;
+	width: 100%;
+	border: 1px solid #999;
+	outline: none;
+}
+
+.input-box:focus {
+	outline: 1px solid #C89B3C;
+}
+
+form button {
+	color: #fff;
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.sign-btn {
+	background-color: #C89B3C;
+}
+
+.sign-btn:hover {
+	background: transparent;
+	outline: 1px solid #C89B3C;
+	color: #C89B3C;
+	transition: all .50s ease;
+}
+
+.return-btn {
+	background-color: #C89B3C;
+}
+
+.return-btn:hover {
+	background: transparent;
+	outline: 1px solid #C8AA6E;
+	color: #C8AA6E;
+	transition: all .50s ease;
+}
+
+a {
+	text-decoration: none;
+}
+
+hr {
+	margin-top: 20px;
+	width: 80%;
+}
+
+.or {
+	background: #fff;
+	width: 30px;
+	margin: -19px auto 10px;
+}
+
+.checkbox {
+	cursor: pointer;
+}
+
+img {
+	width: 70px;
+	margin-top: -50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

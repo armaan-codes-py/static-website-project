@@ -1,0 +1,3066 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+header {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 33px 9%;
+	background: transparent;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+	background: linear-gradient(245.59deg, #0A1428 0%, #0A323C 28.53%, #0A1428 75.52%);
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(transparent, #785A28 80%);
+	border-radius: 6px;
+}
+
+.poro {
+	width: 35px;
+	height: 25px;
+	border-radius: 50%;
+}
+
+.logo {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	color: #C89B3C;
+}
+
+.navlist {
+	display: flex;
+}
+
+.navlist a {
+	color: #C89B3C;
+	margin-left: 60px;
+	font-size: 15px;
+	font-weight: 600;
+	border-bottom: 2px solid transparent;
+	transition: all .55s ease;
+}
+
+.navlist a:hover {
+	border-bottom: 2px solid #C89B3C;
+}
+
+#menu-icon {
+	color: #C89B3C;
+	font-size: 35px;
+	z-index: 1001;
+	cursor: pointer;
+	display: none;
+}
+
+.to-top {
+	background: #C89B3C;
+	position: fixed;
+	bottom: 16px;
+	right: 32px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 32px;
+	color: #fff;
+	text-decoration: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all .55s ease;
+}
+
+.to-top:hover {
+	transform: translateY(-5px);
+}
+
+.to-top.active {
+	bottom: 32px;
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.content {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.75)), url("../IMAGES/JPG/league.jpg");
+	background-size: cover;
+	display: flex;
+}
+
+.start {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;
+}
+
+.start h1 {
+	color: #C89B3C;
+	font-size: 70px;
+	margin-top: 80px;
+}
+
+.start p {
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+
+.btn {
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #C89B3C;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	transition: all .55s ease;
+}
+
+.btn:hover {
+	background: #C89B3C;
+	outline: none;
+}
+
+.garen {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.75)), url("../IMAGES/JPG/garen.jpg");
+	background-size: cover;
+	display: flex;
+}
+
+.master_yi {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.75)), url("../IMAGES/JPG/master yi.jpg");
+	background-size: cover;
+	display: flex;
+}
+
+.ahri {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.75)), url("../IMAGES/JPG/ahri.jpg");
+	background-size: cover;
+	display: flex;
+}
+
+.ashe {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.75)), url("../IMAGES/JPG/ashe.jpg");
+	background-size: cover;
+	display: flex;
+}
+
+.yuumi {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.75)), url("../IMAGES/JPG/yuumi.jpg");
+	background-size: cover;
+	display: flex;
+}
+
+.title h1 {
+	transform: translate(80px, 40px);
+	color: white;
+	font-size: 40pt;
+	font-weight: 900;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.title p {
+	transform: translate(80px, 0px);
+	color: white;
+	font-weight: 400;
+	font-size: 20pt;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.title .p {
+	transform: translate(80px, -15px);
+	color: white;
+	font-weight: 100;
+	font-size: 10pt;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.garen-items {
+	transform: translate(-200px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+}
+
+.garen-items p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.garen-items img {
+	width: 800px;
+	display: block;
+	transform: translate(-1%, -150%);
+	border: 1px solid #C89B3C;
+	transition: all 0.8s ease-in-out;
+	pointer-events: fill;
+}
+
+.garen-items:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.garen-runes {
+	transform: translate(-50px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+	z-index: 1003;
+}
+
+.garen-runes p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.garen-runes img {
+	width: 500px;
+	display: block;
+	border: 1px solid #C89B3C;
+	transform: translate(-2%, -125%);
+	pointer-events: fill;
+}
+
+.garen-runes:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.garen-sum {
+	transform: translate(100px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+	z-index: 1003;
+}
+
+.garen-sum p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.garen-sum img {
+	width: 150px;
+	display: block;
+	border: 1px solid #C89B3C;
+	transform: translate(-7%, -215%);
+	pointer-events: fill;
+}
+
+.garen-sum:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.garen-abilties {
+	transform: translate(250px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+}
+
+.garen-abilties p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.garen-abilties:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.garen-ability {
+	display: block;
+	width: 900px;
+	height: 500px;
+	border: 1px solid #C89B3C;
+	background: transparent;
+	transform: translate(-79%, -116.2%);
+	margin: 0;
+	padding: 0;
+}
+
+.garen-passive {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	transform: translate(50%, 165%);
+}
+
+.garen-passive img {
+	width: 100%;
+	height: 100%;
+}
+
+.garen-q {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(120%, 20%);
+}
+
+.garen-q img {
+	width: 100%;
+	height: 100%;
+}
+
+.garen-w {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(250%, -80%);
+}
+
+.garen-w img {
+	width: 100%;
+	height: 100%;
+}
+
+.garen-e {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(380%, -180%);
+}
+
+.garen-e img {
+	width: 100%;
+	height: 100%;
+}
+
+.garen-r {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(510%, -280%);
+	z-index: 1003;
+}
+
+.garen-r img {
+	width: 100%;
+	height: 100%;
+}
+
+.video {
+	height: 0px;
+}
+
+.video video {
+	display: block;
+	width: 400px;
+	height: 400px;
+	transform: translate(110%, -65%);
+	overflow: hidden;
+}
+
+.rectangle {
+	display: block;
+	width: 370px;
+	height: 250px;
+	border: 0.5px solid #C89B3C;
+	transform: translate(122%, -74%);
+	border-top-right-radius: 35px;
+	margin: 0;
+	padding: 0;
+}
+
+.fighter {
+	width: 40px;
+	height: 40px;
+	display: block;
+	fill: #C89B3C;
+	transform: translate(60%, 250%);
+}
+
+.garen-text-passive {
+	display: block;
+}
+
+.h4 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(50px, 40px);
+}
+
+.h3 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(50px, 40px);
+}
+
+.garen-text-passive p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(50px, 40px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h41 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-20px, 27px);
+}
+
+.h31 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-20px, 27px);
+	width: 300px;
+}
+
+.garen-text-q p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-20px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h42 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-125px, 27px);
+}
+
+.h32 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-125px, 27px);
+	width: 300px;
+}
+
+.garen-text-w p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-125px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h43 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-229px, 27px);
+}
+
+.h33 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-229px, 27px);
+	width: 300px;
+}
+
+.garen-text-e p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-229px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h44 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-332px, 27px);
+}
+
+.h34 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-332px, 27px);
+	width: 300px;
+}
+
+.garen-text-r p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-332px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.garen-passive img.selected {
+    border: 5px solid #fff;
+}
+
+.title1 h1 {
+	transform: translate(80px, 40px);
+	color: white;
+	font-size: 40pt;
+	font-weight: 900;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.title1 p {
+	transform: translate(80px, 0px);
+	color: white;
+	font-weight: 400;
+	font-size: 20pt;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.title1 .p {
+	transform: translate(80px, -15px);
+	color: white;
+	font-weight: 100;
+	font-size: 10pt;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.master-items {
+	transform: translate(-200px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+}
+
+.master-items p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.master-items img {
+	width: 800px;
+	display: block;
+	transform: translate(-1%, -150%);
+	border: 1px solid #C89B3C;
+	transition: all 0.8s ease-in-out;
+	pointer-events: fill;
+}
+
+.master-items:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.master-runes {
+	transform: translate(-50px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+	z-index: 1003;
+}
+
+.master-runes p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.master-runes img {
+	width: 500px;
+	display: block;
+	border: 1px solid #C89B3C;
+	transform: translate(-2%, -125%);
+	pointer-events: fill;
+}
+
+.master-runes:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.master-sum {
+	transform: translate(100px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+	z-index: 1003;
+}
+
+.master-sum p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.master-sum img {
+	width: 150px;
+	display: block;
+	border: 1px solid #C89B3C;
+	transform: translate(-7%, -210%);
+	pointer-events: fill;
+}
+
+.master-sum:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.master-abilties {
+	transform: translate(250px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+}
+
+.master-abilties p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.master-abilties:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.master-ability {
+	display: block;
+	width: 900px;
+	height: 500px;
+	border: 1px solid #C89B3C;
+	background: transparent;
+	transform: translate(-79%, -116.2%);
+	margin: 0;
+	padding: 0;
+}
+
+.master-passive {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	transform: translate(50%, 165%);
+}
+
+.master-passive img {
+	width: 100%;
+	height: 100%;
+}
+
+.master-q {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(120%, 20%);
+}
+
+.master-q img {
+	width: 100%;
+	height: 100%;
+}
+
+.master-w {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(250%, -80%);
+}
+
+.master-w img {
+	width: 100%;
+	height: 100%;
+}
+
+.master-e {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(380%, -180%);
+}
+
+.master-e img {
+	width: 100%;
+	height: 100%;
+}
+
+.master-r {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(510%, -280%);
+	z-index: 1003;
+}
+
+.master-r img {
+	width: 100%;
+	height: 100%;
+}
+
+.video-master {
+	height: 0px;
+}
+
+.video-master video {
+	display: block;
+	width: 400px;
+	height: 400px;
+	transform: translate(110%, -65%);
+	overflow: hidden;
+}
+
+.master-rectangle {
+	display: block;
+	width: 370px;
+	height: 250px;
+	border: 0.5px solid #C89B3C;
+	transform: translate(122%, -74%);
+	border-top-right-radius: 35px;
+	margin: 0;
+	padding: 0;
+}
+
+.assassin {
+	width: 40px;
+	height: 40px;
+	display: block;
+	fill: #C89B3C;
+	transform: translate(60%, 250%);
+}
+
+.master-text-passive {
+	display: block;
+}
+
+.h4 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(50px, 40px);
+}
+
+.h3 {
+	width: 400px;
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(50px, 40px);
+}
+
+.master-text-passive p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(50px, 40px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h41 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-20px, 27px);
+}
+
+.h31 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-20px, 27px);
+	width: 300px;
+}
+
+.master-text-q p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-20px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h42 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-125px, 27px);
+}
+
+.h32 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-125px, 27px);
+	width: 300px;
+}
+
+.master-text-w p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-125px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h43 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-229px, 27px);
+}
+
+.h33 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-229px, 27px);
+	width: 300px;
+}
+
+.master-text-e p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-229px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h44 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-332px, 27px);
+}
+
+.h34 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-332px, 27px);
+	width: 300px;
+}
+
+.master-text-r p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-332px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.master-passive img.selected {
+    border: 5px solid #fff;
+}
+
+.title2 h1 {
+	transform: translate(80px, 40px);
+	color: white;
+	font-size: 40pt;
+	font-weight: 900;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.title2 p {
+	transform: translate(80px, 0px);
+	color: white;
+	font-weight: 400;
+	font-size: 20pt;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.title2 .p {
+	transform: translate(80px, -15px);
+	color: white;
+	font-weight: 100;
+	font-size: 10pt;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.ahri-items {
+	transform: translate(-200px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+}
+
+.ahri-items p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.ahri-items img {
+	width: 800px;
+	display: block;
+	transform: translate(-1%, -150%);
+	border: 1px solid #C89B3C;
+	transition: all 0.8s ease-in-out;
+	pointer-events: fill;
+}
+
+.ahri-items:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.ahri-runes {
+	transform: translate(-50px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+	z-index: 1003;
+}
+
+.ahri-runes p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.ahri-runes img {
+	width: 500px;
+	display: block;
+	border: 1px solid #C89B3C;
+	transform: translate(-2%, -125%);
+	pointer-events: fill;
+}
+
+.ahri-runes:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.ahri-sum {
+	transform: translate(100px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+	z-index: 1003;
+}
+
+.ahri-sum p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.ahri-sum img {
+	width: 150px;
+	display: block;
+	border: 1px solid #C89B3C;
+	transform: translate(-7%, -195%);
+	pointer-events: fill;
+}
+
+.ahri-sum:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.ahri-abilties {
+	transform: translate(250px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+}
+
+.ahri-abilties p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.ahri-abilties:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.ahri-ability {
+	display: block;
+	width: 900px;
+	height: 500px;
+	border: 1px solid #C89B3C;
+	background: transparent;
+	transform: translate(-79%, -116.2%);
+	margin: 0;
+	padding: 0;
+}
+
+.ahri-passive {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	transform: translate(50%, 165%);
+}
+
+.ahri-passive img {
+	width: 100%;
+	height: 100%;
+}
+
+.ahri-q {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(120%, 20%);
+}
+
+.ahri-q img {
+	width: 100%;
+	height: 100%;
+}
+
+.ahri-w {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(250%, -80%);
+}
+
+.ahri-w img {
+	width: 100%;
+	height: 100%;
+}
+
+.ahri-e {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(380%, -180%);
+}
+
+.ahri-e img {
+	width: 100%;
+	height: 100%;
+}
+
+.ahri-r {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(510%, -280%);
+	z-index: 1003;
+}
+
+.ahri-r img {
+	width: 100%;
+	height: 100%;
+}
+
+.video-ahri {
+	height: 0px;
+}
+
+.video-ahri video {
+	display: block;
+	width: 400px;
+	height: 400px;
+	transform: translate(110%, -65%);
+	overflow: hidden;
+}
+
+.ahri-rectangle {
+	display: block;
+	width: 370px;
+	height: 250px;
+	border: 0.5px solid #C89B3C;
+	transform: translate(122%, -74%);
+	border-top-right-radius: 35px;
+	margin: 0;
+	padding: 0;
+}
+
+.mage {
+	width: 40px;
+	height: 40px;
+	display: block;
+	fill: #C89B3C;
+	transform: translate(60%, 250%);
+}
+
+.ahri-text-passive {
+	display: block;
+}
+
+.h4 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(50px, 40px);
+}
+
+.h3 {
+	width: 400px;
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(50px, 40px);
+}
+
+.ahri-text-passive p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(50px, 40px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h41 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-20px, 27px);
+}
+
+.h31 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-20px, 27px);
+	width: 300px;
+}
+
+.ahri-text-q p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-20px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h42 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-125px, 27px);
+}
+
+.h32 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-125px, 27px);
+	width: 300px;
+}
+
+.ahri-text-w p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-125px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h43 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-229px, 27px);
+}
+
+.h33 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-229px, 27px);
+	width: 300px;
+}
+
+.ahri-text-e p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-229px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h44 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-332px, 27px);
+}
+
+.h34 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-332px, 27px);
+	width: 300px;
+}
+
+.ahri-text-r p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-332px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.ahri-passive img.selected {
+    border: 5px solid #fff;
+}
+
+.title3 h1 {
+	transform: translate(80px, 40px);
+	color: white;
+	font-size: 40pt;
+	font-weight: 900;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.title3 p {
+	transform: translate(80px, 0px);
+	color: white;
+	font-weight: 400;
+	font-size: 20pt;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.title3 .p {
+	transform: translate(80px, -15px);
+	color: white;
+	font-weight: 100;
+	font-size: 10pt;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.ashe-items {
+	transform: translate(-200px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+}
+
+.ashe-items p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.ashe-items img {
+	width: 800px;
+	display: block;
+	transform: translate(-1%, -150%);
+	border: 1px solid #C89B3C;
+	transition: all 0.8s ease-in-out;
+	pointer-events: fill;
+}
+
+.ashe-items:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.ashe-runes {
+	transform: translate(-50px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+	z-index: 1003;
+}
+
+.ashe-runes p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.ashe-runes img {
+	width: 500px;
+	display: block;
+	border: 1px solid #C89B3C;
+	transform: translate(-2%, -125%);
+	pointer-events: fill;
+}
+
+.ashe-runes:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.ashe-sum {
+	transform: translate(100px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+	z-index: 1003;
+}
+
+.ashe-sum p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.ashe-sum img {
+	width: 150px;
+	display: block;
+	border: 1px solid #C89B3C;
+	transform: translate(-7%, -200%);
+	pointer-events: fill;
+}
+
+.ashe-sum:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.ashe-abilties {
+	transform: translate(250px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+}
+
+.ashe-abilties p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.ashe-abilties:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.ashe-ability {
+	display: block;
+	width: 900px;
+	height: 500px;
+	border: 1px solid #C89B3C;
+	background: transparent;
+	transform: translate(-79%, -116.2%);
+	margin: 0;
+	padding: 0;
+}
+
+.ashe-passive {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	transform: translate(50%, 165%);
+}
+
+.ashe-passive img {
+	width: 100%;
+	height: 100%;
+}
+
+.ashe-q {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(120%, 20%);
+}
+
+.ashe-q img {
+	width: 100%;
+	height: 100%;
+}
+
+.ashe-w {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(250%, -80%);
+}
+
+.ashe-w img {
+	width: 100%;
+	height: 100%;
+}
+
+.ashe-e {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(380%, -180%);
+}
+
+.ashe-e img {
+	width: 100%;
+	height: 100%;
+}
+
+.ashe-r {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(510%, -280%);
+	z-index: 1003;
+}
+
+.ashe-r img {
+	width: 100%;
+	height: 100%;
+}
+
+.video-ashe {
+	height: 0px;
+}
+
+.video-ashe video {
+	display: block;
+	width: 400px;
+	height: 400px;
+	transform: translate(110%, -65%);
+	overflow: hidden;
+}
+
+.ashe-rectangle {
+	display: block;
+	width: 370px;
+	height: 250px;
+	border: 0.5px solid #C89B3C;
+	transform: translate(122%, -74%);
+	border-top-right-radius: 35px;
+	margin: 0;
+	padding: 0;
+}
+
+.marksman {
+	width: 40px;
+	height: 40px;
+	display: block;
+	fill: #C89B3C;
+	transform: translate(60%, 250%);
+}
+
+.ashe-text-passive {
+	display: block;
+}
+
+.h4 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(50px, 40px);
+}
+
+.h3 {
+	width: 400px;
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(50px, 40px);
+}
+
+.ashe-text-passive p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(50px, 40px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h41 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-20px, 27px);
+}
+
+.h31 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-20px, 27px);
+	width: 300px;
+}
+
+.ashe-text-q p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-20px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h42 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-125px, 27px);
+}
+
+.h32 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-125px, 27px);
+	width: 300px;
+}
+
+.ashe-text-w p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-125px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h43 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-229px, 27px);
+}
+
+.h33 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-229px, 27px);
+	width: 300px;
+}
+
+.ashe-text-e p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-229px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h44 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-332px, 27px);
+}
+
+.h34 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-332px, 27px);
+	width: 300px;
+}
+
+.ashe-text-r p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-332px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.ashe-passive img.selected {
+    border: 5px solid #fff;
+}
+
+.title4 h1 {
+	transform: translate(80px, 40px);
+	color: white;
+	font-size: 40pt;
+	font-weight: 900;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.title4 p {
+	transform: translate(80px, 0px);
+	color: white;
+	font-weight: 400;
+	font-size: 20pt;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.title4 .p {
+	transform: translate(80px, -15px);
+	color: white;
+	font-weight: 100;
+	font-size: 10pt;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.yuumi-items {
+	transform: translate(-200px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+}
+
+.yuumi-items p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.yuumi-items img {
+	width: 800px;
+	display: block;
+	transform: translate(-1%, -150%);
+	border: 1px solid #C89B3C;
+	transition: all 0.8s ease-in-out;
+	pointer-events: fill;
+}
+
+.yuumi-items:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.yuumi-runes {
+	transform: translate(-50px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+	z-index: 1003;
+}
+
+.yuumi-runes p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.yuumi-runes img {
+	width: 500px;
+	display: block;
+	border: 1px solid #C89B3C;
+	transform: translate(-2%, -125%);
+	pointer-events: fill;
+}
+
+.yuumi-runes:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.yuumi-sum {
+	transform: translate(100px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+	z-index: 1003;
+}
+
+.yuumi-sum p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.yuumi-sum img {
+	width: 150px;
+	display: block;
+	border: 1px solid #C89B3C;
+	transform: translate(-7%, -190%);
+	pointer-events: fill;
+}
+
+.yuumi-sum:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.yuumi-abilties {
+	transform: translate(250px, 620px);
+	width: 200px;
+	height: 70px;
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.55s ease;
+}
+
+.yuumi-abilties p {
+	display: block;
+	color: #fff;
+	font-size: 20pt;
+	font-weight: 900;
+	text-align: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.yuumi-abilties:hover {
+	outline: none;
+	border: none;
+	background-color: #C89B3C;
+}
+
+.yuumi-ability {
+	display: block;
+	width: 900px;
+	height: 500px;
+	border: 1px solid #C89B3C;
+	background: transparent;
+	transform: translate(-79%, -116.2%);
+	margin: 0;
+	padding: 0;
+}
+
+.yuumi-passive {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	transform: translate(50%, 165%);
+}
+
+.yuumi-passive img {
+	width: 100%;
+	height: 100%;
+}
+
+.yuumi-q {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(120%, 20%);
+}
+
+.yuumi-q img {
+	width: 100%;
+	height: 100%;
+}
+
+.yuumi-w {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(250%, -80%);
+}
+
+.yuumi-w img {
+	width: 100%;
+	height: 100%;
+}
+
+.yuumi-e {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(380%, -180%);
+}
+
+.yuumi-e img {
+	width: 100%;
+	height: 100%;
+}
+
+.yuumi-r {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	transform: translate(510%, -280%);
+	z-index: 1003;
+}
+
+.yuumi-r img {
+	width: 100%;
+	height: 100%;
+}
+
+.video-yuumi {
+	height: 0px;
+}
+
+.video-yuumi video {
+	display: block;
+	width: 400px;
+	height: 400px;
+	transform: translate(110%, -65%);
+	overflow: hidden;
+}
+
+.yuumi-rectangle {
+	display: block;
+	width: 370px;
+	height: 250px;
+	border: 0.5px solid #C89B3C;
+	transform: translate(122%, -74%);
+	border-top-right-radius: 35px;
+	margin: 0;
+	padding: 0;
+}
+
+.support {
+	width: 40px;
+	height: 40px;
+	display: block;
+	fill: #C89B3C;
+	transform: translate(60%, 250%);
+}
+
+.yuumi-text-passive {
+	display: block;
+}
+
+.h4 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(50px, 40px);
+}
+
+.h3 {
+	width: 400px;
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(50px, 40px);
+}
+
+.yuumi-text-passive p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(50px, 40px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h41 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-20px, 27px);
+}
+
+.h31 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-20px, 27px);
+	width: 300px;
+}
+
+.yuumi-text-q p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-20px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h42 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-125px, 27px);
+}
+
+.h32 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-125px, 27px);
+	width: 300px;
+}
+
+.yuumi-text-w p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-125px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h43 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-229px, 27px);
+}
+
+.h33 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-229px, 27px);
+	width: 300px;
+}
+
+.yuumi-text-e p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-229px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.h44 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: rgb(126, 126, 126);
+	font-size: 8pt;
+	font-weight: 100;
+	transform: translate(-332px, 27px);
+}
+
+.h34 {
+	font-family: "Josefin Sans", sans-serif;;
+	color: #C89B3C;
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: 5px;
+	transform: translate(-332px, 27px);
+	width: 300px;
+}
+
+.yuumi-text-r p {
+	width: 300px;
+	height: 100px;
+	font-family: "Arial", sans-serif;
+	color: #fff;
+	font-size: 10pt;
+	font-weight: 100;
+	transform: translate(-332px, 27px);
+	padding: 0;
+	margin-top: 5px;
+	text-align: start;
+}
+
+.yuumi-passive img.selected {
+    border: 5px solid #fff;
+}
+
+footer {
+   text-align: center;
+   padding: 20px;
+   background: #0A1428;
+   color: #fff;
+}
+
+.mini-circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.sub-menu-wrap {
+	position: absolute;
+	top: 80%;
+	right: 10%;
+	width: 320px;
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+	max-height: 400px;
+}
+
+.sub-menu {
+	background: transparent;
+	border: 1px solid #C89B3C;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.user-info {
+	display: flex;
+	align-items: center;
+}
+
+.sub-menu-link {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #C89B3C;
+	margin: 12px 0;
+}
+
+.sub-menu-link p {
+	width: 100%;
+}
+
+.sub-menu-link img {
+	width: 30px;
+	background: #C89B3C;
+	border-radius: 50%;
+	padding: 8px;
+	margin-right: 15px;
+}
+
+.sub-menu-link span {
+	font-size: 22px;
+	transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span{
+	transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+	font-weight: 600;
+}
+
+@media (max-width: 1920px) {
+	.garen-items,
+	.master-items,
+	.ahri-items,
+	.ashe-items,
+	.yuumi-items {
+		transform: translate(-200px, 700px);
+	}
+	
+	.garen-runes,
+	.master-runes,
+	.ahri-runes,
+	.ashe-runes,
+	.yuumi-runes {
+		transform: translate(50px, 700px);
+	}
+	
+	.garen-sum,
+	.master-sum,
+	.ahri-sum,
+	.ashe-sum,
+	.yuumi-sum {
+		transform: translate(300px, 700px);
+	}
+	
+	.garen-abilties,
+	.master-abilties,
+	.ahri-abilties,
+	.ashe-abilties,
+	.yuumi-abilties {
+		transform: translate(600px, 700px);
+	}
+}
+
+@media (max-width: 1536px) {
+	.garen-items,
+	.master-items,
+	.ahri-items,
+	.ashe-items {
+		transform: translate(-300px, 650px);
+	}
+	
+	.garen-runes,
+	.master-runes,
+	.ahri-runes,
+	.ashe-runes {
+		transform: translate(-100px, 650px);
+	}
+	
+	.garen-sum,
+	.master-sum,
+	.ahri-sum,
+	.ashe-sum {
+		transform: translate(100px, 650px);
+	}
+	
+	.garen-abilties,
+	.master-abilties,
+	.ahri-abilties,
+	.ashe-abilties {
+		transform: translate(300px, 650px);
+	}
+	
+	.yuumi-items {
+		transform: translate(-340px, 650px);
+	}
+	
+	.yuumi-runes {
+		transform: translate(-140px, 650px);
+	}
+	
+	.yuumi-sum {
+		transform: translate(80px, 650px);
+	}
+	
+	.yuumi-abilties {
+		transform: translate(280px, 650px);
+	}
+}
+
+@media (max-width: 1375px) {
+	.garen-items,
+	.master-items,
+	.ahri-items,
+	.ashe-items {
+		transform: translate(-300px, 550px);
+	}
+	
+	.garen-runes,
+	.master-runes,
+	.ahri-runes,
+	.ashe-runes {
+		transform: translate(-150px, 550px);
+	}
+	
+	.garen-sum,
+	.master-sum,
+	.ahri-sum,
+	.ashe-sum {
+		transform: translate(0px, 550px);
+	}
+	
+	.garen-abilties,
+	.ahri-abilties,
+	.ashe-abilties {
+		transform: translate(150px, 550px);
+	}
+	
+	.master-abilties {
+		transform: translate(130px, 550px);
+	}
+	
+	.yuumi-items {
+		transform: translate(-300px, 550px);
+	}
+	
+	.yuumi-runes {
+		transform: translate(-150px, 550px);
+	}
+	
+	.yuumi-sum {
+		transform: translate(0px, 550px);
+	}
+	
+	.yuumi-abilties {
+		transform: translate(120px, 550px);
+	}
+}
+
+@media (max-width: 1280px) {
+	.garen,
+	.master_yi,
+	.ahri,
+	.ashe,
+	.yuumi {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	.garen-items,
+	.master-items,
+	.ahri-items,
+	.ashe-items {
+		width: 150px;
+		transform: translate(-300px, 550px);
+	}
+	
+	.garen-items img,
+	.master-items img,
+	.ahri-items img,
+	.ashe-items img,
+	.yuumi-items img {
+		width: 750px;
+	}
+	
+	.garen-runes,
+	.master-runes,
+	.ahri-runes,
+	.ashe-runes {
+		width: 150px;
+		transform: translate(-150px, 550px);
+	}
+	
+	.garen-runes img,
+	.master-runes img,
+	.ahri-runes img,
+	.ashe-runes img,
+	.yuumi-runes img {
+		width: 480px;
+	}
+	
+	.garen-sum,
+	.master-sum,
+	.ahri-sum,
+	.ashe-sum {
+		width: 150px;
+		transform: translate(0px, 550px);
+	}
+	
+	.garen-abilties,
+	.master-abilties,
+	.ahri-abilties,
+	.ashe-abilties {
+		width: 150px;
+		transform: translate(150px, 550px);
+	}
+	
+	.garen-ability,
+	.master-ability,
+	.ahri-ability,
+	.ashe-ability,
+	.yuumi-ability {
+		height: 450px;
+		width: 700px;
+	}
+	
+	.yuumi-items {
+		width: 150px;
+		transform: translate(-330px, 550px);
+	}
+	
+	.yuumi-runes {
+		width: 150px;
+		transform: translate(-170px, 550px);
+	}
+	
+	.yuumi-sum {
+		width: 150px;
+		transform: translate(-20px, 550px);
+	}
+	
+	.yuumi-abilties {
+		width: 150px;
+		transform: translate(130px, 550px);
+	}
+	
+	.video video,
+	.video-master video,
+	.video-ahri video,
+	.video-ashe video,
+	.video-yuumi video {
+		width: 300px;
+		height: 200px;
+		transform: translate(380px, -200px);
+	}
+	
+	.rectangle,
+	.master-rectangle,
+	.ahri-rectangle,
+	.ashe-rectangle,
+	.yuumi-rectangle {
+		width: 270px;
+		height: 170px;
+		transform: translate(395px, -185px);
+	}
+}
+
+@media (max-width: 1024px) {
+	body {
+		overflow-x: hidden;
+	}
+	
+	#menu-icon {
+		display: block;
+	}
+	
+	.navlist {
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		width: 300px;
+		height: 30vh;
+		background: #C89B3C;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: 50px 20px;
+		transition: all .55s ease;
+	}
+	
+	.navlist a {
+		margin-left: 0;
+		display: block;
+		margin: 3px 0;
+		color: #fff;
+	}
+	
+	.navlist a:hover {
+		border-bottom: 2px solid #fff;
+	}
+	
+	.navlist.open {
+		right: 0;
+	}
+	
+	.title .p,
+	.title1 .p,
+	.title2 .p,
+	.title3 .p,
+	.title4 .p {
+		display: none;
+	}
+	
+	.garen-items {
+		transform: translate(-220px, 550px);
+	}
+	
+	.master-items {
+		transform: translate(-200px, 550px);
+	}
+	
+	.ahri-items {
+		transform: translate(-170px, 550px);
+	}
+	
+	.ashe-items {
+		transform: translate(-150px, 550px);
+	}
+	
+	.yuumi-items {
+		transform: translate(-130px, 550px);
+	}
+	
+	.garen-runes {
+		transform: translate(-120px, 550px);
+	}
+	
+	.master-runes {
+		transform: translate(-100px, 550px);
+	}
+	
+	.ahri-runes {
+		transform: translate(-80px, 550px);
+	}
+	
+	.ashe-runes {
+		transform: translate(-60px, 550px);
+	}
+	
+	.yuumi-runes {
+		transform: translate(-40px, 550px);
+	}
+	
+	.garen-sum {
+		width: 150px;
+		transform: translate(-20px, 550px);
+	}
+	
+	.master-sum {
+		width: 150px;
+		transform: translate(0px, 550px);
+	}
+	
+	.ahri-sum {
+		width: 150px;
+		transform: translate(20px, 550px);
+	}
+	
+	.ashe-sum {
+		width: 150px;
+		transform: translate(40px, 550px);
+	}
+	
+	.yuumi-sum {
+		width: 150px;
+		transform: translate(60px, 550px);
+	}
+	
+	.garen-abilties {
+		width: 150px;
+		transform: translate(80px, 550px);
+	}
+	
+	.master-abilties {
+		width: 150px;
+		transform: translate(100px, 550px);
+	}
+	
+	.ahri-abilties {
+		width: 150px;
+		transform: translate(120px, 550px);
+	}
+	
+	.ashe-abilties {
+		width: 150px;
+		transform: translate(140px, 550px);
+	}
+	
+	.yuumi-abilties {
+		width: 150px;
+		transform: translate(150px, 550px);
+	}
+}
+
+@media (max-width: 768px) {
+	.garen-items {
+		transform: translate(-180px, 650px);
+	}
+	
+	.garen-runes {
+		transform: translate(-130px, 650px);
+	}
+	
+	.garen-sum {
+		transform: translate(-80px, 650px);
+	}
+	
+	.garen-abilties {
+		transform: translate(-30px, 650px);
+	}
+	
+	.master-items {
+		transform: translate(-180px, 650px);
+	}
+	
+	.master-runes {
+		transform: translate(-130px, 650px);
+	}
+	
+	.master-sum {
+		transform: translate(-80px, 650px);
+	}
+	
+	.master-abilties {
+		transform: translate(-30px, 650px);
+	}
+	
+	.ahri-items {
+		transform: translate(-180px, 650px);
+	}
+	
+	.ahri-runes {
+		transform: translate(-130px, 650px);
+	}
+	
+	.ahri-sum {
+		transform: translate(-80px, 650px);
+	}
+	
+	.ahri-abilties {
+		transform: translate(-30px, 650px);
+	}
+	
+	.ashe-items {
+		transform: translate(-180px, 650px);
+	}
+	
+	.ashe-runes {
+		transform: translate(-130px, 650px);
+	}
+	
+	.ashe-sum {
+		transform: translate(-80px, 650px);
+	}
+	
+	.ashe-abilties {
+		transform: translate(-30px, 650px);
+	}
+	
+	.yuumi-items {
+		transform: translate(-180px, 650px);
+	}
+	
+	.yuumi-runes {
+		transform: translate(-130px, 650px);
+	}
+	
+	.yuumi-sum {
+		transform: translate(-80px, 650px);
+	}
+	
+	.yuumi-abilties {
+		transform: translate(-30px, 650px);
+	}
+}
+
+@media (max-width: 640px) {
+	.garen,
+	.master_yi,
+	.ahri,
+	.ashe {
+		width: 500px;
+		height: 500px;
+		background-size: cover;
+		background-position: right;
+	}
+	
+	.yuumi {
+		width: 500px;
+		height: 500px;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.garen-items,
+	.master-items,
+	.ahri-items,
+	.ashe-items,
+	.yuumi-items{
+		display: none;
+	}
+	
+	.garen-runes,
+	.master-runes,
+	.ahri-runes,
+	.ashe-runes,
+	.yuumi-runes{
+		display: none;
+	}
+	
+	.garen-sum,
+	.master-sum,
+	.ahri-sum,
+	.ashe-sum,
+	.yuumi-sum{
+		display: none;
+	}
+	
+	.garen-abilties,
+	.master-abilties,
+	.ahri-abilties,
+	.ashe-abilties,
+	.yuumi-abilties{
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.garen,
+	.master_yi,
+	.ahri,
+	.ashe {
+		width: 500px;
+		height: 500px;
+		background-size: cover;
+		background-position: right;
+	}
+	
+	.yuumi {
+		width: 500px;
+		height: 500px;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.garen-items,
+	.master-items,
+	.ahri-items,
+	.ashe-items,
+	.yuumi-items{
+		display: none;
+	}
+	
+	.garen-runes,
+	.master-runes,
+	.ahri-runes,
+	.ashe-runes,
+	.yuumi-runes{
+		display: none;
+	}
+	
+	.garen-sum,
+	.master-sum,
+	.ahri-sum,
+	.ashe-sum,
+	.yuumi-sum{
+		display: none;
+	}
+	
+	.garen-abilties,
+	.master-abilties,
+	.ahri-abilties,
+	.ashe-abilties,
+	.yuumi-abilties{
+		display: none;
+	}
+}
+
+@media (max-width: 475px) {
+	.garen,
+	.master_yi,
+	.ahri,
+	.ashe {
+		width: 350px;
+		height: 350px;
+		background-size: cover;
+		background-position: right;
+	}
+	
+	.yuumi {
+		width: 350px;
+		height: 350px;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

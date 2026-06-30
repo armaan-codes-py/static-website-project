@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>POROLOL-CONTACT US</title>
+<!--Logo nel Title Bar-->
+<link rel="icon" href="../IMAGES/PNG/poro2.png" type="image/x-icon">
+<!-- CSS File Estero -->
+<link rel="stylesheet" type="text/css" href="../CSS/contact.css">
+<!-- Boxicon Link -->
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<!-- Remixicon Link -->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<!-- Google Fonts Link -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	
+<!-- SMTP Link -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+<body>
+
+	<header>
+		<a href="../index.html" class="logo"><img src="../IMAGES/PNG/poro2.png" class="poro">POROLOL</a>
+		
+		<ul class="navlist">
+			<li><a href="../HTML/champion.html">Champions</a></li>
+			<li><a href="../HTML/roles.html">Roles</a></li>
+			<li><a href="../HTML/contact.html">Contact</a></li>
+			<li><a href="login.html">Sign Up/Log In</a></li>
+		</ul>
+		
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+	
+	<div class="background">
+	
+		<form class="message-form" onSubmit="sendEmail(); reset(); return false;">
+			
+			<div class="row">
+			
+				<div class="input-group">
+					<input type="text" name="name" id="name" required>
+					<label for="name"><i class="ri-user-fill"></i> Full Name</label>
+				</div>
+
+				<div class="input-group">
+					<input type="text" name="number" id="number" required>
+					<label for="number"><i class="ri-phone-fill"></i> Phone Number</label>
+				</div>
+				
+			</div>
+			
+			<div class="input-group">
+				<input type="email" name="email" id="email" required>
+				<label for="email"><i class="ri-mail-fill"></i> Email</label>
+			</div>
+			
+			<div class="input-group">
+				<textarea id="message" name="message" rows="8" required></textarea>
+				<label for="message"><i class="ri-question-answer-fill"></i> Your Message</label>
+			</div>
+			
+			<button type="submit">Submit</button>
+		</form>
+		
+	</div>
+	
+	<script src="../JS/contact.js"></script>
+	
+</body>
+</html>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
